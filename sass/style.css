@@ -464,7 +464,7 @@ button {
 
 .ico_enter {
   display: inline-block;
-  background: url("../../img/svg/enter-ico.svg");
+  background: url("../img/svg/enter-ico.svg");
   width: 32px;
   height: 40px;
 }
