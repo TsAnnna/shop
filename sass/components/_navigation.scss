@@ -1,0 +1,19 @@
+.navigation {
+  display: flex;
+}
+
+.navigation__item {
+  list-style: none;
+  padding-left: 50px;
+}
+
+.navigation__link {
+  @extend %transition;
+  @include font(2rem, 3rem, 400);
+  color: $color-light;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-primary;
+  }
+}

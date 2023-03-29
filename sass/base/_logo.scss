@@ -1,0 +1,25 @@
+
+.logo {
+  flex-grow: 1;
+
+  &_center {
+    text-align: center;
+    align-self: flex-end;
+  }
+
+  &_left {
+    text-align: start;
+    align-self: center;
+  }
+}
+
+.logo__text {
+  @extend %font-add;
+  @include font(3rem, 4.5rem, 400);
+  text-decoration: none;
+  color: $color-primary;
+
+  &_small {
+    @include font(2rem, 4.5rem, 400);
+  }
+}

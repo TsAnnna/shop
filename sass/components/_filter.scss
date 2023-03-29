@@ -1,0 +1,28 @@
+.filter {
+  padding: 35px 0 70px;
+}
+
+.filter__wrapper {
+  background: rgba(22, 30, 50, 0.55);
+  border-radius: 10px;  
+  padding: 50px 0;  
+}
+
+.filter__socials {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 72px;
+  row-gap: 30px;
+}
+
+.filter__additional-criteria {
+  margin-top: 40px;
+}
+
+.filter__button {
+  margin-top: 40px;
+  text-align: center;
+}

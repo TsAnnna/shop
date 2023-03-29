@@ -1,0 +1,18 @@
+.switcher {
+  display: flex;
+  align-items: center;
+}
+
+.switcher__title {
+  @include font(1.8rem, 2.2rem, 600);
+}
+
+.switcher__item {
+  margin-left: 15px;
+  @include font(1.8rem, 2.5rem, 400);
+  border: 2px solid transparent;
+
+  &_underline {
+    border-bottom: 2px solid $color-primary;
+  }
+}

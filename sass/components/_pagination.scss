@@ -1,0 +1,33 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pagination__link {
+  @extend %transition;
+  display: block;
+  width: 35px;
+  height: 35px;
+  border: 1px solid $color-background;
+  border-radius: 5px;
+  padding: 7px 0;
+  color: $color-text;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover {
+    background-color: $color-background;
+    color: $color-light;
+  }
+
+  &_active {
+    background-color: $color-background;
+    color: $color-light;
+  }
+
+  &_disabled {
+    background-color: rgb(223, 223, 223);
+    pointer-events: none; 
+  }
+}

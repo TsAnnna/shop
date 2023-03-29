@@ -1,0 +1,65 @@
+.card {
+  @extend %transition;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  margin-bottom: 30px;
+
+  &:hover {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.card__info {
+  padding: 10px 22px 25px;
+}
+
+.card__title {
+  text-align: center;
+}
+
+.card__category {
+  text-align: center;
+  margin: 13px 0 23px;
+}
+
+.card__subscribers {
+  text-align: center;
+  margin: 0 0 50px;
+  @include font(2rem, 2.7rem);
+  span {
+    font-weight: 600;
+  }
+}
+
+.card__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__price-symbol {
+  vertical-align: super;
+  font-weight: 500;
+}
+
+.card__price-full {
+  @include font(2.8rem, 3.6rem, 600);
+}
+
+.card__price-cent {
+  vertical-align: super;
+  @include font(2rem, 3.6rem, 600);
+}
+
+.card__button {
+  @extend %transition;
+  padding: 10px 40px;
+  border-radius: 30px;
+  @include font(1.8rem, 2.5rem, 600);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+
+  &:hover {
+    background-color: $color-additional;
+  }
+}
