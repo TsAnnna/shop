@@ -1,7 +1,11 @@
 .header {
   // height: 120px;
-  padding: 23px 0 0px;
+  padding: 20px 0 0px;
 
+  &_solid {
+    background-color: $color-background;
+    padding-bottom: 20px;
+  }
 }
 
 .header__wrapper {

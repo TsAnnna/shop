@@ -1,0 +1,16 @@
+.breadcrumbs {
+  display: flex;
+}
+
+.breadcrumbs__item {
+  list-style: none;
+  padding: 0 30px 0 0;
+}
+
+.breadcrumbs__link {
+  text-decoration: none;
+  color: $color-breadcrumbs;
+  &:hover {
+    color: $color-dark;
+  }
+}

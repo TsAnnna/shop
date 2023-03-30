@@ -30,20 +30,7 @@ main {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-h2 {
-  margin: 0;
-}
-
-h4 {
-  margin: 0;
-}
-
-h5 {
+h1, h2, h3, h4, h5 {
   margin: 0;
 }
 
@@ -323,7 +310,11 @@ template {
   box-sizing: border-box;
 }
 
-.navigation__link, .pagination__link, .card__button, .card {
+p {
+  margin: 0;
+}
+
+.account__sorce:hover, .navigation__link, .pagination__link, .card, .switcher__item, .button {
   transition: all 0.3s ease-out;
 }
 
@@ -375,8 +366,8 @@ h3 {
 }
 
 h4 {
-  font-size: 2.4rem;
-  line-height: 3.3rem;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
   font-weight: 600;
   font-style: normal;
 }
@@ -397,11 +388,38 @@ h5 {
   font-style: normal;
 }
 
-button {
+.button {
   cursor: pointer;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  font-style: normal;
+  color: #000;
+  padding: 10px 40px;
+  border-radius: 30px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
 }
-
-.square-button {
+.button_border {
+  border: solid 1px #fff;
+  background: transparent;
+}
+.button_border:hover {
+  border: solid 1px #F4C177;
+  color: #000;
+}
+.button_prim-colored {
+  border: solid 1px #F4C177;
+  background: #F4C177;
+}
+.button_add-colored {
+  border: solid 1px #EFAA46;
+  background: #EFAA46;
+}
+.button_add-light-colored {
+  border: solid 1px #F9DA4A;
+  background: #F9DA4A;
+}
+.button_square {
   width: 150px;
   padding: 11px 0;
   font-family: "Open Sans", Verdana, sans-serif;
@@ -409,30 +427,20 @@ button {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #fff;
   border-radius: 10px;
   transition: all 0.3s;
 }
-
-.square-button:hover {
-  border: solid 1px #F2A93F;
-  background: #F2A93F;
-  color: #000;
+.button_light-text {
+  color: #fff;
 }
-
 .button_uppercase {
   text-transform: uppercase;
 }
-
-.button_border {
-  border: solid 1px #fff;
-  background: transparent;
+.button_big {
+  width: 100%;
 }
-
-.button_colored {
-  border: solid 1px #F4C177;
-  background: #F4C177;
-  color: #000;
+.button:hover {
+  background-color: #F2A93F;
 }
 
 .logo {
@@ -475,7 +483,11 @@ button {
 }
 
 .header {
-  padding: 23px 0 0px;
+  padding: 20px 0 0px;
+}
+.header_solid {
+  background-color: #242C3A;
+  padding-bottom: 20px;
 }
 
 .header__wrapper {
@@ -496,6 +508,15 @@ button {
 .footer__content {
   display: flex;
   justify-content: space-between;
+}
+
+.layout-2-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.layout-2-column > * {
+  flex-basis: 50%;
 }
 
 .layout-4-column {
@@ -612,6 +633,7 @@ button {
 }
 
 .switcher__item {
+  cursor: pointer;
   margin-left: 15px;
   font-size: 1.8rem;
   line-height: 2.5rem;
@@ -621,6 +643,9 @@ button {
 }
 .switcher__item_underline {
   border-bottom: 2px solid #F4C177;
+}
+.switcher__item:hover {
+  color: #F4C177;
 }
 
 .card {
@@ -684,19 +709,6 @@ button {
   font-style: normal;
 }
 
-.card__button {
-  padding: 10px 40px;
-  border-radius: 30px;
-  font-size: 1.8rem;
-  line-height: 2.5rem;
-  font-weight: 600;
-  font-style: normal;
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
-}
-.card__button:hover {
-  background-color: #F2A93F;
-}
-
 .pagination {
   display: flex;
   justify-content: center;
@@ -746,6 +758,118 @@ button {
 }
 .navigation__link:hover {
   color: #F4C177;
+}
+
+.account_subtitle {
+  color: #000;
+  font-weight: 600;
+}
+.account p {
+  margin: 0 0 15px;
+}
+
+.account__wrapper {
+  padding: 20px 0 90px;
+}
+
+.account__breadcrumbs {
+  margin: 30px 0 30px;
+}
+
+.account__img {
+  max-width: 306px;
+  border-radius: 35px;
+  margin: auto;
+  position: relative;
+}
+.account__img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  transform: translateX(58%);
+  width: 50%;
+  height: 3%;
+  background-color: #000;
+  border-radius: 5px;
+}
+
+.account__image {
+  border: 9px solid #000;
+  border-radius: 35px;
+}
+
+.account__content {
+  padding: 0 0 0 100px;
+  font-size: 2rem;
+  line-height: 2.7rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.account__title {
+  margin: 0 0 20px;
+}
+
+.account__price {
+  font-size: 2.5rem;
+  line-height: 3.4rem;
+  font-weight: 700;
+  font-style: normal;
+  color: #A43013;
+}
+
+.account__sorce {
+  margin: 0 0 15px;
+  color: #59818E;
+}
+.account__sorce:hover {
+  color: #F2A93F;
+}
+
+.account__buttons {
+  max-width: 430px;
+  margin: 35px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.additional-accounts {
+  padding: 0 0 90px;
+}
+
+.additional-accounts__title {
+  margin: 0 0 50px;
+}
+
+.additional-accounts__wrapper {
+  flex-wrap: nowrap;
+}
+
+.additional-account img {
+  max-width: 100%;
+  border: 6px solid #000;
+}
+
+.additional-account__title {
+  margin: 30px 0 5px;
+}
+
+.breadcrumbs {
+  display: flex;
+}
+
+.breadcrumbs__item {
+  list-style: none;
+  padding: 0 30px 0 0;
+}
+
+.breadcrumbs__link {
+  text-decoration: none;
+  color: #6C6C71;
+}
+.breadcrumbs__link:hover {
+  color: #000;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -37,22 +37,11 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-h2 {
+h1, h2, h3, h4, h5 {
   margin: 0;
 }
 
-h4 {
-  margin: 0;
-}
 
-h5 {
-  margin: 0;
-}
 
 /* Grouping content
    ========================================================================== */
@@ -363,4 +352,8 @@ template {
 
 * {
   box-sizing: border-box;
+}
+
+p {
+  margin: 0;
 }

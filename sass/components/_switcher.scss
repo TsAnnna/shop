@@ -8,11 +8,17 @@
 }
 
 .switcher__item {
+  @extend %transition;
+  cursor: pointer;
   margin-left: 15px;
   @include font(1.8rem, 2.5rem, 400);
   border: 2px solid transparent;
 
   &_underline {
     border-bottom: 2px solid $color-primary;
+  }
+
+  &:hover {
+    color: $color-primary;
   }
 }

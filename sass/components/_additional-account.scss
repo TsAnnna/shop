@@ -1,0 +1,23 @@
+.additional-accounts {
+  padding: 0 0 90px;
+}
+
+.additional-accounts__title {
+  margin: 0 0 50px;
+}
+
+.additional-accounts__wrapper {
+  flex-wrap: nowrap;
+}
+
+.additional-account {
+  img {
+    max-width: 100%;
+    border: 6px solid $color-dark;
+  }
+
+}
+
+.additional-account__title {
+  margin: 30px 0 5px;
+}
