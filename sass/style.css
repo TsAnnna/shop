@@ -411,6 +411,11 @@ h5 {
   border: solid 1px #F4C177;
   background: #F4C177;
 }
+.button_prim-colored:hover {
+  background-color: green !important;
+  color: white;
+  border: green;
+}
 .button_add-colored {
   border: solid 1px #EFAA46;
   background: #EFAA46;

@@ -19,6 +19,11 @@
   &_prim-colored {
     border: solid 1px $color-primary;
     background: $color-primary;
+    &:hover {
+      background-color: green !important;
+      color: white;
+      border: green;
+    }
   }
 
   &_add-colored {
