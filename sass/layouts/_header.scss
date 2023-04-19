@@ -12,13 +12,32 @@
   height: 100%;
   display: flex;
   align-items: center;
+  padding: 0 0 0 32px;
+  @include media-laptop {
+    padding: 0 0 0 32px;
+  }
+
+  @include media-mobile {
+    padding: 0 0 0 24px;
+  }
 }
 
 .header__title {
   margin: 0;
+
+  @include media-mobile {
+    @include font(1.6rem, 2rem);
+  }
 }
 
 .enter-button {
+  // @include media-laptop {
+  //   padding: 0 20px 0 0;
+  // }
+
+  // @include media-mobile {
+  //   padding: 0 10px 0 0;
+  // }
 }
 
 

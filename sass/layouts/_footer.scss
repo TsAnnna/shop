@@ -1,9 +1,28 @@
 .footer {
   background-color: $color-background;
   padding: 40px 0;
+
+  @include media-tablet-mini {
+    padding: 30px 0;
+  }
+
+  @media (max-width: 680px) {
+    padding: 20px 0;
+  }
 }
 
-.footer__content {
+.footer__container {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 680px) {
+    flex-direction: column;
+  }
+}
+
+.footer__navigation {
+  margin: 15px 0 0;
+  @media (max-width: 680px) {
+    margin: 15px 0 ;
+  }
 }

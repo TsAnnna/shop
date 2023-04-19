@@ -1,17 +1,48 @@
 .showcase {
-  padding: 60px 0;
+  padding: 50px 0;
+
+  @include media-mobile {
+    padding: 30px 0;
+  }
 }
 
-.showcase__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.showcase__title {
+  margin-bottom: 2%;
+  
+  @include media-mobile {
+    margin-bottom: 4%;
+  }
+
 }
 
 .showcase__cards {
-  margin: 50px 0;
+  margin: 25px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px 30px;
+  justify-content: space-between;
+
+  @media (max-width: $showcase-width1) {
+    gap: 0px 20px;
+}
+
+  @media (max-width: $showcase-width2) {
+      gap: 0px 15px;
+  }
+
+  @include media-tablet {
+    margin: 15px 0;
+  }
+
+  @media (max-width: 759px) {
+    justify-content: space-around;
+  }
+
+  @include media-mobile {
+    justify-content: space-between;
+    gap: 0px 10px;
+  }
 }
 
 .showcase__paginator {
-  margin: 0 0 10px;
 }

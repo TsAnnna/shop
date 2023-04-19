@@ -73,18 +73,19 @@
 
   <section class="showcase">
     <div class="wrapper">
-      <div class="showcase__header">
-        <h2 class="h2">All Accounts</h2>
-        <div class="switcher">
-          <span class="switcher__title">Sort by:</span> 
-          <span class="switcher__item switcher__item_underline">relevance</span> 
-          <span class="switcher__item">creation date</span> 
-          <span class="switcher__item">subscribers</span> 
-          <span class="switcher__item">price</span>
-        </div>
+      <h2 class="showcase__title">All Accounts</h2>
+      <div class="switcher">
+        <span class="switcher__title">Sort by:</span> 
+        <span class="switcher__item switcher__item_underline">relevance</span> 
+        <span class="switcher__item">creation date</span> 
+        <span class="switcher__item">subscribers</span> 
+        <span class="switcher__item">price</span>
+      </div> 
+      <div class="switcher__mobile">
+        <span class="ico ico_sort"></span>
+        <span class="switcher__mobile-item">Relevance</span>
       </div>
       <div class="showcase__cards">
-        <div class="layout-4-column">
           <div class="card">
             <img class="card__image" src="img/card-img.jpg" alt="cars">
             <div class="card__info">
@@ -97,7 +98,7 @@
                   <span class="card__price-full">110</span>
                   <span class="card__price-cent">99</span>
                 </div>
-                <div>
+                <div class="card__button">
                   <button class="button general-button button_prim-colored button_darker">Buy</button>  
                 </div>
               </div>
@@ -115,7 +116,7 @@
                   <span class="card__price-full">110</span>
                   <span class="card__price-cent">99</span>
                 </div>
-                <div>
+                <div class="card__button">
                   <button class="button general-button button_prim-colored button_darker">Buy</button>  
                 </div>
               </div>
@@ -133,8 +134,8 @@
                   <span class="card__price-full">110</span>
                   <span class="card__price-cent">99</span>
                 </div>
-                <div>
-                  <button class="button general-button button_prim-colored button_darker">Buy</button>  
+                <div class="card__button">
+                  <button class="button button_prim-colored button_darker">Buy</button>  
                 </div>
               </div>
             </div>  
@@ -151,45 +152,41 @@
                   <span class="card__price-full">110</span>
                   <span class="card__price-cent">99</span>
                 </div>
-                <div>
+                <div class="card__button">
                   <button class="button general-button button_prim-colored button_darker">Buy</button>  
                 </div>
               </div>
             </div>  
           </div>
-
-        </div>
       </div>
       <div class="showcase__paginator">
         <ul class="pagination">
-          <a href="#" class="pagination__link pagination__link_disabled"><<</a>
-          <a href="#" class="pagination__link pagination__link_disabled"><</a>
-          <a href="#" class="pagination__link pagination__link_active">1</a>
-          <a href="#" class="pagination__link">2</a>
-          <a href="#" class="pagination__link">3</a>
-          <a href="#" class="pagination__link">...</a>
-          <a href="#" class="pagination__link">12</a>
-          <a href="#" class="pagination__link">></a>
-          <a href="#" class="pagination__link">>></a>
+          <button class="pagination__btn disabled" type="button">Previous</button>
+          <div class="pagination__list">
+            <a href="#" class="pagination__link pagination__link_active">1</a>
+            <a href="#" class="pagination__link">2</a>
+            <a href="#" class="pagination__link">3</a>
+            <a href="#" class="pagination__link">...</a>
+            <a href="#" class="pagination__link">10</a>
+          </div>
+          <button class="pagination__btn" type="button">Next</button>
         </ul>
       </div>
     </div>
   </section>
   
   <footer class="footer">
-    <div class="wrapper">
-      <div class="footer__content">
-        <div class="logo logo_left">
-          <a class="logo__text logo__text_small" href="#">Quick & Secure</a>
-        </div> 
-        <nav class="footer__navigation">
-          <ul class="navigation">
-            <li class="navigation__item"><a href="#" class="navigation__link">About Us</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link">Contacts</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link">How It Works</a></li>
-          </ul>
-        </nav>
-      </div>
+    <div class="wrapper footer__container">
+      <div class="logo logo_left">
+        <a class="logo__text logo__text_small" href="#">Quick & Secure</a>
+      </div> 
+      <nav class="footer__navigation">
+        <ul class="navigation">
+          <li class="navigation__item"><a href="#" class="navigation__link">About Us</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Contacts</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">How It Works</a></li>
+        </ul>
+      </nav>
     </div>
   </footer>
 </body>

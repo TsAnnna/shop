@@ -1,17 +1,17 @@
 .dropdown-list {
   max-width: 550px;
   margin: auto;
+  // text-align: center;
 }
 
 .dropdown-list__wrapper {
   margin-top: 25px;
   position: relative;
-  width: 535px;
   &::before {
     content: "";
     position: absolute;
     top: 35%;
-    right: 15px;
+    right: 20px;
     transform: translateY(-50%);
 
     display: block;
@@ -27,7 +27,7 @@
 }
 
 .select {
-  width: 550px;
+  width: 100%;
   appearance: none;
   -moz-appearance: none; 
   -webkit-appearance: none; 
@@ -39,8 +39,17 @@
   cursor: pointer;
   outline: none;
 
+  @include media-tablet {
+    @include font(1.4rem, 2rem)
+  }
+
 }
 
 .dropdown-list__title {
   margin: 6px 0;
+
+  @include media-tablet {
+    @include font(1.5rem, 2rem)
+  }
+  // text-align: start;
 }

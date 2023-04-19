@@ -9,9 +9,16 @@ $color-text: #000;
 $color-light: #fff;
 $color-dark: #000;
 $color-breadcrumbs: #6C6C71;
+$color-switcher-bg: #f6f7fa;
 
 
 $content-width: 1220px;
-$tablet-width: 768px;
-$mobile-big-width: 414px;
-$mobile-small-width: 320px;
+$tablet-width: 820px;
+$tablet-width-mini: 768px;
+$mobile-width: 420px;
+$mobile-width-mini: 320px;
+
+//media const for cards
+
+$showcase-width1: 1164px;
+$showcase-width2: 879px;

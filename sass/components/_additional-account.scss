@@ -1,20 +1,40 @@
 .additional-accounts {
   padding: 0 0 90px;
+
+  @include media-tablet {
+    padding: 0 0 50px;
+  }  
+
+  @include media-mobile {
+    padding: 0 0 30px;
+  }
 }
 
 .additional-accounts__title {
   margin: 0 0 50px;
+
+  @include media-tablet {
+    margin: 0 0 30px;
+  }
+  
+  @include media-mobile {
+    margin: 0 0 20px;
+    @include font(1.8rem, 2.2rem, 600);
+  }
 }
 
 .additional-accounts__wrapper {
   flex-wrap: nowrap;
+  @include media-tablet {
+    :last-child {
+      display: none;
+    }
+  }
 }
 
 .additional-account {
-  img {
-    max-width: 100%;
-    border: 6px solid $color-dark;
-  }
+
+
   &:hover {
     cursor: pointer;
     .additional-account__title {
@@ -28,6 +48,42 @@
 
 }
 
+.additional-account__img {
+  max-width: 100%;
+  border: 6px solid $color-dark;
+  border-radius: 35px;
+
+  @include media-tablet {
+    border: 5px solid $color-dark;
+    border-radius: 30px;
+  }
+
+  @media (max-width: 620px) {
+    border: 4px solid $color-dark;
+    border-radius: 25px;
+  }
+
+  @include media-mobile {
+    border-radius: 20px;
+    border: 3px solid $color-dark;
+  }
+}
+
+
 .additional-account__title {
   margin: 30px 0 5px;
+
+  @include media-mobile {
+    margin: 15px 0 5px;
+  }
+}
+
+.additional-account__price {
+  @include media-tablet {
+    display: block !important;
+  }
+
+  @include media-mobile {
+    @include font(1.3rem, 1.8rem);
+  }
 }

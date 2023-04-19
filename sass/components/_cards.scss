@@ -5,37 +5,160 @@
   cursor: pointer;
   margin-bottom: 30px;
 
+  flex: 0 1 23%;
+
   &:hover {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
   }
+
+  @media (max-width: $showcase-width1) {
+    flex: 0 1 15%;
+    min-width: 260px;
+  }
+
+  @media (max-width: 1139px) {
+    flex: 0 1 23%;
+    min-width: 230px;
+  }
+
+  @media (max-width: 1019px) {
+    flex: 0 1 30%;
+  }
+
+  @include media-tablet-mini {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 759px) {
+    // flex: 0 1 40%;
+    // min-width: 245px;
+    min-width: 200px;
+    
+  }
+
+  @media(max-width: 670px) {
+    flex: 0 1 45%;
+    min-width: 180px;
+  }
+
+  @include media-mobile{
+    flex: 0 1 48%;
+    margin-bottom: 15px;
+    min-width: 145px;
+  }
+
+}
+
+.card__image {
+ width: 100%; 
+ max-width: 100%;
 }
 
 .card__info {
   padding: 10px 22px 25px;
+  
+  @media (max-width: $showcase-width2) {
+    padding: 10px 15px 20px;
+  }
+
+  @include media-tablet-mini {
+    padding: 10px 15px 20px;
+  }
+
+  @include media-mobile {
+    padding: 10px 10px 15px;
+  }
 }
 
 .card__title {
-  text-align: center;
+  
+  @media (max-width: 544px) {
+    @include font(1.8rem, 2rem, 600);
+  }
 }
 
 .card__category {
-  text-align: center;
+  // text-align: center;
   margin: 13px 0 23px;
+
+  @media (max-width: 544px) {
+    margin: 5px 0 10px;
+    @include font(1.4rem, 1.8rem, 400);
+  }
+
+  @include media-mobile {
+    margin: 5px 0 10px;
+    @include font(1.2rem, 1.6rem, 400);
+  }
 }
 
 .card__subscribers {
-  text-align: center;
+  // text-align: center;
   margin: 0 0 50px;
   @include font(2rem, 2.7rem);
   span {
     font-weight: 600;
   }
+
+  @media (max-width: $showcase-width2) {
+    @include font(1.8rem, 2.5rem, 400);
+  }
+
+  @media (max-width: 1139px) {
+    margin: 0 0 20px;
+  }
+
+  @include media-tablet-mini {
+    margin: 0 0 20px;
+  }
+
+
+  @media (max-width: 544px) {
+    @include font(1.5rem, 1.8rem, 400);
+    margin: 0 0 15px;
+  }
+
+  @include media-mobile {
+    @include font(1.3rem, 1.6rem, 400);
+    margin: 0 0 15px;
+  }
+
 }
 
 .card__price {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 1139px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 544px) {
+    flex-direction: column;
+  }
+
+  @include media-mobile {
+    flex-direction: column;
+  }
+}
+
+.card__price-wrapper {
+
+  @media (max-width: 1139px) {
+    align-self: start;
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: 544px) {
+    align-self: start;
+    margin-bottom: 15px;
+  }
+
+  @include media-mobile {
+    align-self: start;
+    margin-bottom: 15px;
+  }
 }
 
 .card__price-symbol {
@@ -45,9 +168,66 @@
 
 .card__price-full {
   @include font(2.8rem, 3.6rem, 600);
+
+  @media (max-width: 544px) {
+    @include font(2rem, 2.7rem, 600);
+  }
+
+  @include media-mobile {
+    @include font(1.7rem, 2.1rem, 600);
+  }
 }
 
 .card__price-cent {
   vertical-align: super;
   @include font(2rem, 3.6rem, 600);
+
+  @media (max-width: 544px) {
+    @include font(1.4rem, 2.1rem, 600);
+  }
+
+  @include media-mobile {
+    @include font(1.2rem, 2.1rem, 600);
+  }
+}
+
+.card__button {
+  @media (max-width: $showcase-width2) {
+    button {
+      padding: 10px 30px;
+    }
+  }
+
+  @media (max-width: 1139px) {
+    button {
+      padding: 9px 60px;
+      @include font(1.8rem, 2.4rem, 600);
+    }
+  }
+
+  @media (max-width: 759px) {
+    button {
+      padding: 10px 70px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    button {
+      padding: 10px 60px;
+    }
+  }
+
+  @media (max-width: 544px) {
+    button {
+      padding: 9px 50px;
+      @include font(1.8rem, 2.4rem, 600);
+    }
+  }
+
+  @include media-mobile {
+    button {
+      padding: 7px 50px;
+      @include font(1.4rem, 2.1rem, 600);
+    }
+  }
 }

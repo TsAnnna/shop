@@ -1,8 +1,20 @@
 .layout-2-column {
-  @include columns(50%);
+  @include columns(45%);
+
+  @media (max-width: 699px) {
+    @include columns(100%);
+  }
 }
   
 
 .layout-4-column {
   @include columns(20%);
+
+  @include media-tablet {
+    @include columns(25%);
+  }
+
+  @include media-mobile {
+    @include columns(28%);
+  }
 }

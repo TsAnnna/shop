@@ -22,4 +22,8 @@
   &_small {
     @include font(2rem, 4.5rem, 400);
   }
+
+  @include media-mobile {
+    @include font(2rem, 3rem);
+  }
 }
