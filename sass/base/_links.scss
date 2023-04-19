@@ -1,0 +1,11 @@
+.link {
+  text-decoration: none;
+
+  &_colored {
+    color: $color-link;
+  }
+  &:hover {
+    @extend %transition;
+    color: $color-hover;
+  }
+}

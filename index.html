@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sass/style.css">
+  <title>Online account store</title>
+</head>
+<body>
+  <div class="gradient">
+    <header class="header">
+      <div class="wrapper header__wrapper">
+        <div class="logo logo_center">
+          <a class="logo__text" href="#">Quick & Secure</a>
+          <h1 class="header__title">social media marketplace</h1>
+        </div> 
+        <div class="enter-button">
+          <a href="#" class=""><span class="ico ico_enter"></span></a>
+        </div>
+      </div>
+    </header>
+  
+    <div class="filter">
+      <div class="wrapper filter__wrapper">
+        <form action="POST" class="filter__form">
+          <div class="filter__socials">
+          <button class="button button_square button_border button_light-text button_uppercase">Instagram</button>
+          <button class="button button_square button_border button_light-text button_uppercase">YouTube</button>
+          <button class="button button_square button_border button_light-text button_uppercase">Telegram</button>
+          <button class="button button_square button_border button_light-text button_uppercase">Twitter</button>
+          <button class="button button_square button_prim-colored button_uppercase">TikTok</button>
+        </div>
+        <div class="filter__additional-criteria">
+          <div class="dropdown-list dropdown-list__wrapper">
+              <select name="select-category" id="" class="select">
+                <option value="0" selected>Select Category</option>
+                <option value="1">Art & design</option>
+                <option value="1">Cars & bikes</option>
+                <option value="1">City & country</option>
+              </select>
+            <h5 class="dropdown-list__title">Category</h5>
+          </div>
+          <div class="dropdown-list dropdown-list__wrapper">
+              <select name="select-followers" id="" class="select">
+                <option value="0" selected>Select Followers</option>
+                <option value="1">10 - 10000</option>
+                <option value="1">10000 - 20000</option>
+                <option value="1">20000 - 30000</option>
+              </select>
+            <h5 class="dropdown-list__title">Followers</h5>
+          </div>
+          <div class="dropdown-list dropdown-list__wrapper">
+              <select name="select-price" id="" class="select">
+                <option value="0" selected>Select Price</option>
+                <option value="1">1000</option>
+                <option value="1">2000</option>
+                <option value="1">3000</option>
+              </select>
+            <h5 class="dropdown-list__title">Price</h5>
+          </div>
+        </div>
+        <div class="filter__button">
+          <button type="submit" class="button button_square button_prim-colored">Filtering</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <section class="showcase">
+    <div class="wrapper">
+      <h2 class="showcase__title">All Accounts</h2>
+      <div class="switcher">
+        <span class="switcher__title">Sort by:</span> 
+        <span class="switcher__item switcher__item_underline">relevance</span> 
+        <span class="switcher__item">creation date</span> 
+        <span class="switcher__item">subscribers</span> 
+        <span class="switcher__item">price</span>
+      </div> 
+      <div class="switcher__mobile">
+        <span class="ico ico_sort"></span>
+        <span class="switcher__mobile-item">Relevance</span>
+      </div>
+      <div class="showcase__cards">
+          <div class="card">
+            <img class="card__image" src="img/card-img.jpg" alt="cars">
+            <div class="card__info">
+              <h3 class="card__title">Musclecaronly</h3>
+              <div class="card__category">Cars & Bikes</div>
+              <div class="card__subscribers"><span>138K</span> subscribers</div>
+              <div class="card__price">
+                <div class="card__price-wrapper">
+                  <span class="card__price-symbol">$</span>
+                  <span class="card__price-full">110</span>
+                  <span class="card__price-cent">99</span>
+                </div>
+                <div class="card__button">
+                  <button class="button general-button button_prim-colored button_darker">Buy</button>  
+                </div>
+              </div>
+            </div>  
+          </div>
+          <div class="card">
+            <img class="card__image" src="img/card-img.jpg" alt="cars">
+            <div class="card__info">
+              <h3 class="card__title">Musclecaronly</h3>
+              <div class="card__category">Cars & Bikes</div>
+              <div class="card__subscribers"><span>138K</span> subscribers</div>
+              <div class="card__price">
+                <div class="card__price-wrapper">
+                  <span class="card__price-symbol">$</span>
+                  <span class="card__price-full">110</span>
+                  <span class="card__price-cent">99</span>
+                </div>
+                <div class="card__button">
+                  <button class="button general-button button_prim-colored button_darker">Buy</button>  
+                </div>
+              </div>
+            </div>  
+          </div>
+          <div class="card">
+            <img class="card__image" src="img/card-img.jpg" alt="cars">
+            <div class="card__info">
+              <h3 class="card__title">Musclecaronly</h3>
+              <div class="card__category">Cars & Bikes</div>
+              <div class="card__subscribers"><span>138K</span> subscribers</div>
+              <div class="card__price">
+                <div class="card__price-wrapper">
+                  <span class="card__price-symbol">$</span>
+                  <span class="card__price-full">110</span>
+                  <span class="card__price-cent">99</span>
+                </div>
+                <div class="card__button">
+                  <button class="button button_prim-colored button_darker">Buy</button>  
+                </div>
+              </div>
+            </div>  
+          </div>
+          <div class="card">
+            <img class="card__image" src="img/card-img.jpg" alt="cars">
+            <div class="card__info">
+              <h3 class="card__title">Musclecaronly</h3>
+              <div class="card__category">Cars & Bikes</div>
+              <div class="card__subscribers"><span>138K</span> subscribers</div>
+              <div class="card__price">
+                <div class="card__price-wrapper">
+                  <span class="card__price-symbol">$</span>
+                  <span class="card__price-full">110</span>
+                  <span class="card__price-cent">99</span>
+                </div>
+                <div class="card__button">
+                  <button class="button general-button button_prim-colored button_darker">Buy</button>  
+                </div>
+              </div>
+            </div>  
+          </div>
+      </div>
+      <div class="showcase__paginator">
+        <ul class="pagination">
+          <button class="pagination__btn disabled" type="button">Previous</button>
+          <div class="pagination__list">
+            <a href="#" class="pagination__link pagination__link_active">1</a>
+            <a href="#" class="pagination__link">2</a>
+            <a href="#" class="pagination__link">3</a>
+            <a href="#" class="pagination__link">...</a>
+            <a href="#" class="pagination__link">10</a>
+          </div>
+          <button class="pagination__btn" type="button">Next</button>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <div class="wrapper footer__container">
+      <div class="logo logo_left">
+        <a class="logo__text logo__text_small" href="#">Quick & Secure</a>
+      </div> 
+      <nav class="footer__navigation">
+        <ul class="navigation">
+          <li class="navigation__item"><a href="#" class="navigation__link">About Us</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Contacts</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">How It Works</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

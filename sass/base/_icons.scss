@@ -1,0 +1,28 @@
+.ico {
+  display: inline-block;
+}
+
+.ico_enter {
+  display: inline-block;
+  background: url('../img/svg/enter-ico.svg');
+  width: 32px;
+  height: 40px;
+
+  @include media-mobile {
+    background: url('../img/svg/enter-ico-small.svg');
+    width: 24px;
+    height: 29px;
+  }
+}
+
+.ico_sort {
+  background: url('/img/svg/descending-icon.svg');
+  width: 18px;
+  height: 15px;
+}
+
+.ico_back {
+  background: url('/img/svg/back-ico.svg');
+  width: 30px;
+  height: 30px;
+}
